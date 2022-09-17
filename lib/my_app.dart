@@ -1,4 +1,6 @@
 
+import 'package:covid_19_dashboard/views/bottom_nav_screen.dart';
+import 'package:covid_19_dashboard/views/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,9 +13,12 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.green,
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.white,
+        visualDensity: VisualDensity.adaptivePlatformDensity
 
       ),
-      home: HomeScreen(),
+      home: BottomNavScreen(),
     );
   }
 }
